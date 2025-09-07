@@ -1,0 +1,16 @@
+Reflection
+Working on this project gave me a better understanding of how blockchains actually work under the hood. 
+Before this, I thought “hashing” and “mining” were just buzzwords, but seeing them in code made it much clearer. 
+Every block’s hash is based on its data, plus the previous block’s hash. 
+That means even a tiny change in one block causes its hash to completely change, which then breaks the whole chain. 
+This is why blockchains are considered immutable because once data is in the chain, you can’t secretly change it without it not making sense.
+Proof-of-Work was another big piece of the puzzle.
+At first it felt weird that the computer just keeps trying random nonces until the hash starts with `000`, but that’s the whole point: 
+it forces the computer to do a lot of work to “earn” the right hash. 
+The higher the difficulty, the more work it takes. This makes it really hard for someone to go back and alter old blocks, 
+because they’d have to redo all that mining faster than the rest of the network. It clicked for me that this is what keeps the blockchain 
+secure in real life. What surprised me the most was how short the code actually is. 
+I expected hundreds of lines, but it only takes a couple of classes and a loop to show the core ideas. 
+Printing out the full chain in JSON and watching it flip from “valid” to “not valid” after tampering was really satisfying — 
+it’s a simple demo, but it shows the exact reason why blockchain tech is trusted. 
+Overall, this assignment made the concepts way less abstract and a lot more real to me.
